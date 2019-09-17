@@ -22,8 +22,9 @@ app.use(async (ctx:Koa.Context) => {
     'number1|1-100.1-10': 1,
     'number2|123.1-10': 1,
     'number3|123.3': 1,
-    'number4|123.10': 1.123
+    // 'number4|123.10': 1.123
   });
+  ctx.set("Content-Type", "application/json");
   ctx.body = JSON.stringify(temp);
 
 });

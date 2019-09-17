@@ -8,5 +8,10 @@
     "noImplicitAny": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-  }
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
